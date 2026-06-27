@@ -1,12 +1,20 @@
-﻿# CapitalCircle
+# CapitalCircle
 
-CapitalCircle is a full-stack fintech/community finance platform for managing savings groups, pooled contributions, funding requests, and transparent group ledgers.
+Full-stack fintech/community finance platform for managing savings groups, pooled contributions, funding requests, and transparent group ledgers.
+
+CapitalCircle demonstrates how community capital groups can move from spreadsheets and chat threads to a structured digital workflow with authenticated users, group membership, contribution tracking, funding approvals, and ledger-derived balances.
 
 ## Problem Statement
 
-Community savings groups and informal investment circles often rely on spreadsheets, chat threads, or manual record keeping. That makes it difficult to answer basic trust-building questions: who contributed, what was approved, where funds moved, and what the group balance should be.
+Community savings groups and informal investment circles often rely on spreadsheets, chat threads, or manual record keeping. That makes it difficult to answer basic trust-building questions:
 
-CapitalCircle solves this with a simple digital workflow: members join capital groups, record contributions, submit funding requests, and view an auditable ledger where every balance is calculated from immutable credit and debit entries.
+- Who contributed?
+- What was approved?
+- Where did funds move?
+- What should the group balance be?
+- Which decisions were made by admins?
+
+CapitalCircle solves this with a simple digital workflow: members join capital groups, record contributions, submit funding requests, and view an auditable ledger where every balance is calculated from credit and debit entries.
 
 ## Core Features
 
@@ -20,6 +28,7 @@ CapitalCircle solves this with a simple digital workflow: members join capital g
 - Clean React dashboard with cards, tables, forms, loading states, empty states, and status badges.
 - Swagger/OpenAPI documentation for backend APIs.
 - Dockerized PostgreSQL and Spring Boot backend.
+- Integration tests covering core business flows.
 
 ## Tech Stack
 
@@ -33,8 +42,6 @@ CapitalCircle solves this with a simple digital workflow: members join capital g
 | Testing | Spring Boot tests, MockMvc, H2 test profile, Maven Docker image |
 
 ## Architecture Overview
-
-CapitalCircle is organized as a monorepo with separate backend and frontend applications.
 
 ```text
 capital-circle/
@@ -203,27 +210,6 @@ $workdir = (Get-Location).Path; docker run --rm -v "${workdir}:/app" -w /app mav
 
 The tests use a Spring `test` profile with H2 and cover the core flows: auth, group admin creation, duplicate joins, contributions, ledger credits, funding request status, admin approval, ledger debits, rejection behavior, and insufficient balance blocking.
 
-## Screenshots
-
-Add screenshots to `docs/screenshots/` using these paths:
-
-```text
-docs/screenshots/dashboard.png
-docs/screenshots/groups.png
-docs/screenshots/group-overview.png
-docs/screenshots/contributions.png
-docs/screenshots/funding-requests.png
-docs/screenshots/ledger.png
-```
-
-Suggested README embeds:
-
-```md
-![Dashboard](docs/screenshots/dashboard.png)
-![Group Overview](docs/screenshots/group-overview.png)
-![Ledger](docs/screenshots/ledger.png)
-```
-
 ## Demo User Flow
 
 1. Register a new account.
@@ -239,6 +225,7 @@ Suggested README embeds:
 
 ## Future Improvements
 
+- Add polished screenshots for the dashboard, group overview, contributions, funding requests, ledger, and Swagger docs.
 - Invite links and email-based group invitations.
 - Member contribution schedules and recurring contribution reminders.
 - Funding request comments and voting.
@@ -250,4 +237,4 @@ Suggested README embeds:
 
 ## Portfolio / Resume Bullet
 
-Built `CapitalCircle`, a full-stack fintech/community finance platform using Java 21, Spring Boot 3, React TypeScript, PostgreSQL, Docker, JWT authentication, REST APIs, Swagger/OpenAPI, Flyway migrations, service-layer business logic, and ledger-based balance modeling for transparent pooled contributions and funding requests.
+Built CapitalCircle, a full-stack fintech/community finance platform using Java 21, Spring Boot 3, React TypeScript, PostgreSQL, Docker, JWT authentication, REST APIs, Swagger/OpenAPI, Flyway migrations, service-layer business logic, and ledger-based balance modeling for transparent pooled contributions and funding requests.
