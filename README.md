@@ -1,5 +1,7 @@
 # CapitalCircle
 
+![CI](https://github.com/Henysha/capital-circle/actions/workflows/ci.yml/badge.svg)
+
 Full-stack fintech/community finance platform for managing savings groups, pooled contributions, funding requests, and transparent group ledgers.
 
 CapitalCircle demonstrates how community capital groups can move from spreadsheets and chat threads to a structured digital workflow with authenticated users, group membership, contribution tracking, funding approvals, and ledger-derived balances.
