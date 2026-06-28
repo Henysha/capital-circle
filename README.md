@@ -16,6 +16,32 @@ Community savings groups and informal investment circles often rely on spreadshe
 
 CapitalCircle solves this with a simple digital workflow: members join capital groups, record contributions, submit funding requests, and view an auditable ledger where every balance is calculated from credit and debit entries.
 
+## Screenshots
+
+### Login
+![CapitalCircle login](docs/screenshots/login.png)
+
+### Dashboard
+![CapitalCircle dashboard](docs/screenshots/dashboard.png)
+
+### Groups
+![CapitalCircle groups](docs/screenshots/groups.png)
+
+### Group Detail
+![CapitalCircle group detail](docs/screenshots/group-detail.png)
+
+### Contributions
+![CapitalCircle contributions](docs/screenshots/contributions.png)
+
+### Funding Requests
+![CapitalCircle funding requests](docs/screenshots/funding-requests.png)
+
+### Ledger
+![CapitalCircle ledger](docs/screenshots/ledger.png)
+
+### Swagger API Docs
+![CapitalCircle Swagger API docs](docs/screenshots/swagger.png)
+
 ## Core Features
 
 - JWT-based registration, login, and protected dashboard access.
@@ -225,7 +251,6 @@ The tests use a Spring `test` profile with H2 and cover the core flows: auth, gr
 
 ## Future Improvements
 
-- Add polished screenshots for the dashboard, group overview, contributions, funding requests, ledger, and Swagger docs.
 - Invite links and email-based group invitations.
 - Member contribution schedules and recurring contribution reminders.
 - Funding request comments and voting.
